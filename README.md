@@ -82,4 +82,4 @@ src/
 
 ## 📄 开源协议
 
-GPT License - 详见 [LICENSE](LICENSE) 文件
+MIT License - 详见 [LICENSE](LICENSE) 文件
