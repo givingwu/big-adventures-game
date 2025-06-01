@@ -94,7 +94,6 @@ export interface GameCell extends LinkedList {
   next: () => Cell;
 }
 
-
 <GameCell order={order} type={type} reward={reward} position={position} />
 ```
 
@@ -104,7 +103,7 @@ export interface GameCell extends LinkedList {
 
 - Player 需要通过摇骰子 rollDice 获取具体点数
 - Player 需要沿着 `order` 从 `currentCell` 移动到 `targetCell`，即 `GamePath`
-- Player 停在移动之后，需要判断停留的 `currentCell` 是否获奖，获奖则领奖
+- Player 停止移动之后，需要判断停留的 `currentCell` 是否获奖，获奖则领奖
 
 ```tsx
 /**
@@ -169,8 +168,8 @@ const cells: Cell = GameService.getCellsList()
 
 2. 第二步：渲染 UI，通过 `cells` 数据渲染 `GameBoard`，渲染 `GamePlayer` & `GameDice` 组件
 
-3. 对三步：执行游戏逻辑：
-  - Player 摇骰子 Dice 获取 Step
+3. 第三步：执行游戏逻辑
+  - Player 摇骰子 Dice 获取移动 Step
   - Player 移动图标到 targetStep = currentStep + nextStep
 
 4. 循环往复，直到游戏结束

@@ -24,7 +24,6 @@ const GameBoard = memo(({ colCount, rowCount, cells, currentOrder }: GameBoardPr
         className="grid grid-cols-8 gap-2"
         style={{
           width: '100%',
-          maxWidth: '800px',
           aspectRatio: '8/7'
         }}
       >
